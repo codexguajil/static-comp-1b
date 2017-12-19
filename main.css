@@ -1,0 +1,477 @@
+body, 
+html {
+  background: grey;
+  cursor: crosshair;
+  height: 100%;
+  margin: 0;
+}
+
+section {
+  display: block;
+  height: 50%;
+  width: 100%;
+}
+
+/*top section*/
+h1 {
+  background-image: repeating-linear-gradient(#097E86, steelblue 20%, white 10%);
+  box-shadow: 10px 5px 5px black;
+  color: white;
+  font-size: 20vw;
+  /*margin-top: 1.3em;*/
+  border: groove 15px #FE5184;
+  border-radius: 2em;
+  margin: auto;
+  margin-top: 160px;
+  width: 75%;
+}
+
+ #left-arrow {
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    top: 37%;
+    left: 0;
+  }
+
+  #right-arrow {
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    top: 37%;
+    right: 0;
+  }
+
+.right {
+  background: orange;
+  background-image: url(images/paris-graffiti.jpg);
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  background-blend-mode: orange;
+  height: 50%;
+  position: absolute;
+  text-align: center;
+  vertical-align: center;
+  top: 0;
+}
+
+span {
+  color: red;
+}
+
+/*bottom section*/
+.box1 {
+  background: #011627;
+}
+
+h2 {
+  color: ghostwhite;
+  display: inline-block;
+  margin-left: 13px;
+  padding-top: 20px;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+img {
+  position: absolute;
+  right: 16px;
+  top: 27px;
+}
+
+.box2 {
+  background: #FDFFFC;
+}
+
+.box3 {
+  background: #2EC4B6;
+}
+
+#b3-h2 {
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.box4 {
+  background: #E71D36;
+}
+
+.box5 {
+  background: #FF9F1C;
+}
+
+.box6 {
+  background: #011627;
+}
+
+.box7 {
+  background: #FDFFFC;
+}
+
+.box {
+  /*border: 1px solid lightgreen;*/
+  background-image: linear-gradient('class', white);
+  font-family: sans-serif;
+  height: 100px;
+  display: block;
+  position: relative;
+}
+
+.big-box {
+  position: relative;
+  background-color: steelblue;
+}
+
+.info-buttons {
+  position: absolute;
+}
+
+.little-box-1 {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: -130px;
+  right: -270px;
+  border: solid 2px white;
+  padding: 4px;
+}
+
+.little-box-2 {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: -130px;
+  right: -360px;
+  border: solid 2px white;
+  padding: 4px;
+}
+
+.left {
+  background: grey;
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  overflow: scroll;
+}
+
+/*media queries*/
+@media (max-width: 440px) {
+  .little-box-1,
+  .little-box-2 {
+    top: -150px;
+  }
+}
+
+@media (min-width: 550px) {
+  .box {
+    height: 10em;
+  }
+
+  h1 {
+    font-size: 9.5vw;
+    margin: auto;
+    margin-top: 300px;
+    width: 70%;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  img {
+    height: 70%;
+    right: 8%;
+    width: 15%;
+  }
+
+  .left {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    /*overflow: scroll;*/
+    position: 0;
+  }
+
+  #left-arrow {
+    height: 70%;
+    right: 8%;
+    width: 15%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+  }
+
+  #radio {
+    position: absolute;
+    top: -300px;
+    right: 0px;
+    z-index: 1;
+    width: 50px;
+  }
+
+  #right-arrow {
+    height: 70%;
+    right: 8%;
+    width: 15%;
+    position: absolute;
+    top: 15%;
+    right: 0;
+  }
+
+  .right {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+  }
+
+  .title-and-arrows {
+    display: block;
+    margin-top: 50%;
+    position: relative;
+  }
+
+  .little-box-1 {
+    position: absolute;
+    right: -450px;
+    padding: 15px;
+  }
+
+  .little-box-2 {
+    right: -550px;
+    padding: 15px;
+  }
+
+  .info-buttons {
+    top: 210px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #radio {
+    position: absolute;
+    top: -300px;
+    right: -480px;
+    z-index: 1;
+    width: 50px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    font-size: 16px;
+  }
+
+  section {
+    display: inline-block;
+  }
+
+  .box {
+    display: inline-block;
+    position: relative;
+    height: 34.4%;
+    margin: -2px;
+    width: 33.4%;
+  }
+
+  .big-box {
+    height: 33.9%;
+    width: 66.78%;
+    position: flex;
+  }
+
+  h1 {
+    font-size: 11vh;
+    margin-top: 330px;
+    width: 70%;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .h2-box {
+    position: absolute;
+    bottom: 50px;
+    margin-left: 30%;
+    right: 40%;
+    font-size: 24px;
+  }
+
+  .box-bottom {
+    left: 30px;
+  }
+
+  .box-bottom-3 {
+    left: 25px;
+  }
+
+  .box1 {
+    font-size: 16px;
+  }
+
+
+  h3 {
+    position: absolute;
+    color: snow;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  img {
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 10%;
+  }
+
+  .top-right-box {
+    margin-top: 0;
+  }
+
+  .box1 {
+    margin-top: 0;
+  }
+
+  .info-buttons {
+    position: absolute;
+    display: inline-block;
+    bottom: 100px;
+    left: 190px;
+  }
+
+  #left-arrow {
+    margin-left: 0px;
+  }
+
+  #right-arrow {
+    margin-right: 0px;
+    width: 100px;
+  }
+
+  .little-box-1 {
+    border: solid 2px white;
+    color: white;
+    position: absolute;
+    /*bottom: 45px;*/
+    /*left: 20px;*/
+    top: 10px;
+    right: 50px;
+    padding: 10px;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+     width: 100px;
+     text-align: center;
+  }
+
+  .little-box-2 {
+    border: solid 2px white;
+    color: white;
+    position: absolute;
+    /*bottom: 70px;*/
+    top: 10px;
+    padding: 10px;
+    left: 0px;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+     width: 100px;
+     text-align: center;
+  }
+
+  .left {
+    overflow-y: hidden;
+    width: 60%;
+  }
+
+  .right {
+    /*background-size: 100% 95%;*/
+    position: relative;
+    float: right;
+    background-image: url(images/paris-graffiti.jpg);
+    vertical-align: middle;
+    width: 40%;
+  }
+
+  .top-right-box {
+    margin-top: 62px;
+    margin-left: 43%;
+    font-size: 24px;
+    position: relative;
+  }
+
+  #top-image {
+    height: 50%;
+    top: 100px;
+  }
+}
+
+@media (max-height: 500px) {
+  section {
+    display: inline-flex;
+  }
+
+  .box {
+    height: 100%;
+  }
+
+  .left {
+    width: 80%;
+  }
+
+  .right {
+    width: 20%;
+  }
+
+  .section-right {
+    flex-direction: row;
+  }
+
+  h2 {
+    position: absolute;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  .h2-box {
+    display: none;
+  }
+
+  .top-right-box {
+    display: none;
+  }
+
+  h3 {
+    position: absolute;
+  }
+}
+
+@media (min-width: 1800px) {
+  #radio {
+    position: absolute;
+    top: -300px;
+    right: -590px;
+    z-index: 1;
+    width: 50px;
+  }
+}
